@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket Ball Score </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SCORE BOARD</h1>
+        <div class="row">
+            <div class="box">
+                <h2>HOME</h2>
+                <div class="screen" >
+                    <span id="hscore">00</span>
+                </div>
+                <div class="btns">
+                    <button onclick="add1()">+1</button>
+                    <button onclick="add2()">+2</button>
+                    <button onclick="add3()">+3</button>
+                </div>
+            </div>
+            <div class="box">
+                <h2>GUEST</h2>
+                <div class="screen" >
+                    <span id="gscore">00</span>
+                </div>
+                <div class="btns">
+                    <button onclick="add4()">+1</button>
+                    <button onclick="add5()">+2</button>
+                    <button onclick="add6()">+3</button>
+                </div>
+            </div>
+        </div>
+        <button class="reset" onclick="reset()">RESET</button>
+    </div>
+    <div class="pop">
+        <h1>🥇WINNER🏆</h1>
+        <div id="winners">SOMETHING WENT WRONG 🙁🙁 CALL DEVELOPER </div>
+        <button onclick="cpopup()">OKAY</button>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</html>

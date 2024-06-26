@@ -1,0 +1,133 @@
+body {
+    height: 100%;
+    background-image: url(image.jpg);
+    background-size: cover;
+}
+
+@font-face {
+    font-family: sevenSegment;
+    src: url(Seven\ Segment.ttf);
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(69, 9, 111, 0.771);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.box {
+    min-width: 100px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btns {
+    margin-top: 15%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    border-style: dashed;
+    border-color: white;
+    font-family: sevenSegment;
+    padding: 10px 20px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.screen {
+    background-color: black;
+    font-family: sevenSegment;
+    font-size: 50px;
+    color: red;
+    padding: 5%;
+    max-width: 35%;
+    margin-left: 25%;
+}
+
+.reset {
+    font-weight: bold;
+    color: white;
+    border-color: #04AA6D;
+    background-color: #04AA6D;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 20px;
+    transition: background-color 0.2s, transform 0.2s;
+    margin: 3%;
+}
+
+.reset:hover {
+    background-color: #036e4e;
+    border-color: #036e4e;
+}
+
+.pop {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(55, 55, 161, 0.771);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: large;
+    opacity: 0%;
+    top: -200%;
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.pop.active {
+    top: 50%;
+    opacity: 100%;
+}
+
+.pop button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#winners {
+    margin: 25px;
+}
+
+@media (min-width: 600px) {
+    .row {
+        flex-direction: row;
+    }
+}
