@@ -26,7 +26,7 @@ This is a simple Basketball Scoreboard project built with HTML, CSS, and JavaScr
 
 ## Live Demo
 
-[Click here to see the live demo](#)
+[Click here to see the live demo](https://anugraheeth.github.io/Scoreboard/)
 
 ## Installation
 
